@@ -7,13 +7,25 @@
 
     <Button
         android:id="@+id/btnStartAppService"
-        android:text="启动服务"
+        android:text="启动外部服务"
         android:layout_width="match_parent"
         android:layout_height="wrap_content" />
 
     <Button
         android:id="@+id/btnStopAppService"
-        android:text="停止服务"
+        android:text="停止外部服务"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <Button
+        android:id="@+id/btnBindAppService"
+        android:text="绑定外部服务"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <Button
+        android:id="@+id/btnUnbindAppService"
+        android:text="解除绑定外部服务"
         android:layout_width="match_parent"
         android:layout_height="wrap_content" />
 </LinearLayout>

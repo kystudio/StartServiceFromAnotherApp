@@ -3,6 +3,7 @@ package com.kystudio.startservicefromanotherapp;
 import android.app.Service;
 import android.content.Intent;
 import android.os.IBinder;
+import android.os.RemoteException;
 import android.widget.Toast;
 
 public class AppService extends Service {
@@ -11,7 +12,12 @@ public class AppService extends Service {
 
     @Override
     public IBinder onBind(Intent intent) {
-        throw new UnsupportedOperationException("Not yet implemented");
+        return new IAppServiceRemoteBinder.Stub() {
+            @Override
+            public void basicTypes(int anInt, long aLong, boolean aBoolean, float aFloat, double aDouble, String aString) throws RemoteException {
+
+            }
+        };
     }
 
     @Override
